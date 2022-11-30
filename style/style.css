@@ -32,6 +32,10 @@ select {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
 }
 
+.city:last-child {
+  border: none;
+}
+
 .date {
   font-size: 14px;
   opacity: 0.7;
