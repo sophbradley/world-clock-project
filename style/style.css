@@ -1,6 +1,16 @@
+:root {
+  /* --primary-color: #f6ebf4;
+  --font-color: #482673;
+  --accent-color: #4cbfa6;*/
+  --primary-color: #d6d6d6;
+  --font-color: #f57a95;
+  --accent-color: #4f4f51;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(135, 190, 241, 0.3);
+  background-color: var(--primary-color);
+  color: var(--font-color);
 }
 
 h1 {
@@ -12,19 +22,36 @@ h2 {
   margin-bottom: 5px;
 }
 
+a {
+  color: var(--font-color);
+}
+
+a:hover {
+  color: var(--font-color);
+  font-weight: 500;
+}
+
 select {
   width: 100%;
+  color: var(--font-color);
 }
 
 h1 a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
+  transition: all 150ms ease-in-out;
+}
+
+h1 a:hover {
+  color: var(--font-color);
+  font-weight: 700;
 }
 
 .container {
   max-width: 600px;
   margin: 60px auto;
   background-color: white;
+
   padding: 30px;
   border-radius: 8px;
   box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
@@ -34,7 +61,7 @@ h1 a {
   display: flex;
   justify-content: space-between;
   font-size: 28px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed var(--font-color);
   margin-bottom: 5px;
 }
 
@@ -63,6 +90,17 @@ footer {
   text-align: center;
   opacity: 0.6;
   margin-bottom: 30px;
+  color: var(--accent-color);
+}
+
+footer a {
+  color: var(--accent-color);
+  transition: all 150ms ease-in-out;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+  font-weight: 500;
 }
 
 @media (max-width: 600px) {
